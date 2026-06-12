@@ -206,6 +206,94 @@ object-fit:contain;
 display:block;
 }
 
+.logo{
+display:flex;
+align-items:center;
+height:60px;
+}
+
+.logo img{
+max-height:50px;
+width:auto;
+object-fit:contain;
+display:block;
+}
+
+/* RESPONSIVE MOBILE */
+@media (max-width: 768px){
+
+nav{
+padding:15px 20px;
+flex-direction:column;
+gap:15px;
+align-items:center;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.logo img{
+max-height:40px;
+}
+
+.hero{
+padding:60px 20px;
+}
+
+.hero-box{
+padding:30px 20px;
+border-radius:25px;
+max-width:100%;
+}
+
+.hero h1{
+font-size:38px;
+line-height:1.2;
+word-break:break-word;
+}
+
+.hero p{
+font-size:16px;
+}
+
+.btn{
+padding:12px 20px;
+font-size:14px;
+}
+
+.stats{
+grid-template-columns:repeat(2,1fr);
+padding:20px;
+gap:15px;
+}
+
+.card{
+padding:20px;
+}
+
+.card h2{
+font-size:28px;
+}
+
+.services{
+padding:40px 20px;
+}
+
+.services h2{
+font-size:28px;
+}
+
+.service-grid{
+grid-template-columns:1fr;
+}
+
+}
+
+</style>
+  
 </style>
 </head>
 <body>
