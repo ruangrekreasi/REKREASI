@@ -321,17 +321,21 @@ font-size:14px;
 }
 
 .stats{
+display:grid;
 grid-template-columns:1fr 1fr;
 padding:20px;
 gap:15px;
-align-items:stretch;
 }
 
 .card{
-min-height:140px;
+padding:20px;
+min-height:auto;
+height:auto;
 display:flex;
 flex-direction:column;
 justify-content:center;
+align-items:flex-start;
+border-radius:25px;
 }
 
 .testimonial-video{
@@ -389,8 +393,20 @@ font-size:28px;
 }
 
 .service-grid{
+display:grid;
 grid-template-columns:1fr;
-gap:20px;
+gap:15px;
+}
+
+.service-box{
+padding:20px;
+height:auto;
+min-height:90px;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+border-radius:25px;
 }
 
 .service-box{
