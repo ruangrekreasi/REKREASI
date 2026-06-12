@@ -63,12 +63,28 @@ nav ul{
 display:flex;
 gap:30px;
 list-style:none;
+padding:15px 25px;
+background:rgba(255,255,255,0.25);
+backdrop-filter:blur(20px);
+-webkit-backdrop-filter:blur(20px);
+border:1px solid rgba(255,255,255,0.4);
+border-radius:50px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
 }
 
 nav ul li a{
 text-decoration:none;
 color:#111;
 font-weight:bold;
+padding:10px 18px;
+border-radius:30px;
+transition:0.3s;
+}
+
+nav ul li a:hover{
+background:rgba(255,255,255,0.5);
+backdrop-filter:blur(10px);
+color:#d46aa1;
 }
 
 .hero{
