@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>REKREASI</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f2f0ee;
+overflow-x:hidden;
+color:#111;
+}
+
+body::before{
+content:'';
+position:fixed;
+width:300px;
+height:300px;
+background:#d46aa1;
+filter:blur(120px);
+top:-100px;
+left:-100px;
+z-index:-1;
+}
+
+body::after{
+content:'';
+position:fixed;
+width:300px;
+height:300px;
+background:#9fc3eb;
+filter:blur(120px);
+bottom:-100px;
+right:-100px;
+z-index:-1;
+}
+
+nav{
+display:flex;
+justify-content:space-between;
+padding:25px 60px;
+background:rgba(255,255,255,0.5);
+backdrop-filter:blur(20px);
+position:sticky;
+top:0;
+z-index:100;
+}
+
+nav h2{
+font-size:28px;
+color:#d46aa1;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav ul li a{
+text-decoration:none;
+color:#111;
+font-weight:bold;
+}
+
+.hero{
+padding:120px 40px;
+text-align:center;
+position:relative;
+}
+
+.hero::before{
+content:'';
+position:absolute;
+width:250px;
+height:250px;
+background:#d46aa1;
+border-radius:50%;
+filter:blur(80px);
+left:20%;
+top:20%;
+opacity:0.4;
+}
+
+.hero::after{
+content:'';
+position:absolute;
+width:200px;
+height:200px;
+background:#9fc3eb;
+border-radius:50%;
+filter:blur(80px);
+right:20%;
+bottom:10%;
+opacity:0.4;
+}
+
+.hero-box{
+max-width:900px;
+margin:auto;
+padding:50px;
+background:rgba(255,255,255,0.5);
+backdrop-filter:blur(25px);
+border-radius:40px;
+box-shadow:0 20px 50px rgba(0,0,0,0.08);
+position:relative;
+z-index:2;
+}
+
+.hero h1{
+font-size:52px;
+line-height:1.2;
+}
+
+.hero p{
+margin-top:20px;
+font-size:18px;
+}
+
+.btn{
+display:inline-block;
+margin-top:30px;
+padding:14px 30px;
+border-radius:40px;
+background:linear-gradient(135deg,#d46aa1,#9fc3eb);
+color:white;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+padding:60px;
+}
+
+.card{
+padding:30px;
+background:white;
+border-radius:30px;
+box-shadow:15px 15px 30px rgba(0,0,0,0.06);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card h2{
+font-size:36px;
+color:#d46aa1;
+}
+
+.services{
+padding:80px 60px;
+text-align:center;
+}
+
+.services h2{
+font-size:40px;
+margin-bottom:40px;
+}
+
+.service-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.service-box{
+padding:40px;
+border-radius:35px;
+background:linear-gradient(145deg,#ffffff,#f6f6f6);
+box-shadow:
+20px 20px 40px rgba(0,0,0,0.06),
+-10px -10px 20px rgba(255,255,255,0.9);
+}
+
+footer{
+margin-top:80px;
+padding:30px;
+text-align:center;
+background:white;
+}
+</style>
+</head>
+<body>
+
+<nav>
+<h2>REKREASI</h2>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Tentang</a></li>
+<li><a href="#">Materi</a></li>
+<li><a href="#">Kegiatan</a></li>
+<li><a href="#">Saran</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<div class="hero-box">
+<h1>WELCOME TO REMAJA KEREN PEDULI KESEHATAN REPRODUKSI</h1>
+<p>
+Platform edukasi kesehatan reproduksi dan pencegahan kekerasan seksual untuk remaja.
+</p>
+<a href="#" class="btn">Berdampak Bersama Rekreasi</a>
+</div>
+</section>
+
+<section class="stats">
+<div class="card">
+<h2>3300+</h2>
+<p>Followers</p>
+</div>
+<div class="card">
+<h2>1870+</h2>
+<p>Viewers</p>
+</div>
+<div class="card">
+<h2>30+</h2>
+<p>Institusi</p>
+</div>
+<div class="card">
+<h2>5000+</h2>
+<p>Remaja Teredukasi</p>
+</div>
+</section>
+
+<section class="services">
+<h2>Layanan Rekreasi</h2>
+
+<div class="service-grid">
+<div class="service-box">Rekreasi On The Ground</div>
+<div class="service-box">Modul Interaktif</div>
+<div class="service-box">Animasi Rekreasi</div>
+<div class="service-box">Rekreasi Live Talk</div>
+<div class="service-box">Ngobrol Bareng Rekreasi</div>
+<div class="service-box">Partner Collaboration</div>
+</div>
+</section>
+
+<footer>
+© 2026 REKREASI
+</footer>
+
+</body>
+</html>
