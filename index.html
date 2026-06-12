@@ -321,9 +321,55 @@ font-size:14px;
 }
 
 .stats{
-grid-template-columns:repeat(2,1fr);
+grid-template-columns:1fr 1fr;
 padding:20px;
 gap:15px;
+align-items:stretch;
+}
+
+.card{
+min-height:140px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+}
+
+.testimonial-video{
+display:flex;
+flex-direction:column;
+padding:30px 20px;
+gap:25px;
+text-align:center;
+}
+
+.video-box{
+width:100%;
+padding:15px;
+}
+
+.video-box iframe{
+width:100%;
+max-width:320px;
+height:420px;
+margin:auto;
+display:block;
+}
+
+.testimonial-text{
+max-width:100%;
+padding:0 10px;
+}
+
+.testimonial-text h2{
+font-size:30px;
+line-height:1.2;
+}
+
+.testimonial-text p{
+font-size:15px;
+line-height:1.6;
+}
+
 }
 
 .card{
@@ -344,6 +390,12 @@ font-size:28px;
 
 .service-grid{
 grid-template-columns:1fr;
+gap:20px;
+}
+
+.service-box{
+padding:25px;
+border-radius:25px;
 }
 
 }
@@ -386,14 +438,9 @@ Berdampak Bersama Rekreasi
 <section class="testimonial-video">
 
 <div class="video-box">
-<iframe
-src="https://www.instagram.com/reel/DNDjW9izFIR/embed"
-width="320"
-height="500"
-frameborder="0"
-scrolling="no"
-allowtransparency="true">
-</iframe>
+<a href="https://www.instagram.com/reel/DNDjW9izFIR/" target="_blank" class="btn">
+Lihat Testimoni di Instagram
+</a>
 </div>
 
 <div class="testimonial-text">
