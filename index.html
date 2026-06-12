@@ -237,18 +237,26 @@ display:block;
 @media (max-width: 768px){
 
 nav{
-padding:15px 20px;
+padding:15px;
 flex-direction:column;
-gap:15px;
 align-items:center;
+gap:15px;
 }
 
 nav ul{
-flex-wrap:wrap;
-justify-content:center;
-gap:15px;
+display:flex;
+overflow-x:auto;
+flex-wrap:nowrap;
+gap:12px;
+width:100%;
+padding:5px 10px;
+justify-content:flex-start;
+scrollbar-width:none;
 }
 
+nav ul::-webkit-scrollbar{
+display:none;
+}
 .logo img{
 max-height:40px;
 }
